@@ -1,0 +1,12 @@
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\bin\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.deps.json
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\bin\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.dll
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.csprojAssemblyReference.cache
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.AssemblyInfoInputs.cache
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.AssemblyInfo.cs
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.csproj.CoreCompileInputs.cache
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\bin\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.runtimeconfig.json
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\bin\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.runtimeconfig.dev.json
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\bin\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.pdb
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.dll
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.pdb
+D:\MyRepository\Ch\VisualStudio\Labs\WebNet\Task1_EFCore\Task1_EFCore.BooksDB\obj\Debug\netcoreapp3.1\Task1_EFCore.BooksDB.genruntimeconfig.cache
