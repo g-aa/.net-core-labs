@@ -1,0 +1,26 @@
+﻿@model List<KeyValuePair<String, String>>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Статистика по каталогу стран:</title>
+</head>
+<body>
+    <label><a href="~/Country/GetCountryList">Возврат в основное меню</a></label>
+    <h3>Статистика по странам</h3>
+    <table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

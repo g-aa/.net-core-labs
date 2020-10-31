@@ -1,0 +1,45 @@
+﻿@model Task2_AspNetCore.WebUI.Models.Data.Entities.Country
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Детальная информация о стране</title>
+</head>
+<body>
+    <label><a href="~/Country/GetCountryList">Возврат в основное меню</a></label>
+    <h3>Страна</h3>
+    <table>
+        <tr>
+            <td>Наименование страны:</td>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <td>Численность населения (чел.):</td>
+            <td>@Model.Population</td>
+        </tr>
+        <tr>
+            <td>Площадь (км^2):</td>
+            <td>@Model.Size</td>
+        </tr>
+        <tr>
+            <td>Расположение (континент):</td>
+            <td>@Model.Continent.ToString()</td>
+        </tr>
+        <tr>
+            <td>Участник G20:</td>
+            @if (Model.IsG20Member)
+            {
+                <td>Да</td>
+            }
+            else
+            {
+                <td>Нет</td>
+            }
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@model List<Task2_AspNetCore.WebUI.Models.Data.Entities.Country>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <label><a href="~/Country/GetCountryList">Возврат в основное меню</a></label>
+    <h2>Поиск страны по имени</h2>
+    @using (Html.BeginForm("SearchBy", "Country", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>Введите критерий поиска:</td>
+                <td><input type="text" name="sortString" /></td>
+            </tr>
+        </table>
+        <div><input type="submit" class="btn btn-default" value="Поиск" /></div>
+        <label>
+            поддерживаемые ключевые слова для поиска (примеры):<br>
+            name:Федер<br>
+            isG20:true<br>
+            isG20:false<br>
+            continent:Eurasia
+        </label>
+    }
+
+    @if (Model.Count != 0)
+    {
+        <table>
+            <tr>
+                <td>Наименование страны:</td>
+                <td>Континент:</td>
+                <td>Площадь (км^2):</td>
+                <td>Действие:</td>
+                <td>Действие:</td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><a href="~/Country/GetCountryBy/@item.CountryId">@item.Name</a></td>
+                    <td>@item.Continent.ToString()</td>
+                    <td>@item.Size.ToString()</td>
+                    <td><a href="~/Country/DeleteCountry/@item.CountryId">Удалить</a></td>
+                    <td><a href="~/Country/UpdateCountry/@item.CountryId">Редактировать</a></td>
+                </tr>
+            }
+        </table>
+    }
+</body>
+</html>

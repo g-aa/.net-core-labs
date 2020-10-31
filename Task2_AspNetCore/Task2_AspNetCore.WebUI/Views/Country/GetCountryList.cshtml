@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Task2_AspNetCore.WebUI.Models.Data.Entities.Country>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Перечень основных характеристик стран</title>
+    </head>
+    <body>
+        <label><a href="~/Country/GetStatistics">Статистика по странам</a></label>
+        <label><a href="~/Country/AddNewCountry">Добавить страну</a></label>
+        <label><a href="~/Country/SearchBy">Поиск</a></label>
+        <h3>Страны</h3>
+        <table>
+            <tr>
+                <td>Наименование страны:</td>
+                <td>Континент:</td>
+                <td>Площадь (км^2):</td>
+                <td>Действие:</td>
+                <td>Действие:</td>
+            </tr>
+            @foreach (var country in Model)
+            {
+                <tr>
+                    <td><a href="~/Country/GetCountryBy/@country.CountryId">@country.Name</a></td>
+                    <td>@country.Continent.ToString()</td>
+                    <td>@country.Size.ToString()</td>
+                    <td><a href="~/Country/DeleteCountry/@country.CountryId">Удалить</a></td>
+                    <td><a href="~/Country/UpdateCountry/@country.CountryId">Редактировать</a></td>
+                </tr>
+            }
+        </table>
+    </body>
+</html>
+

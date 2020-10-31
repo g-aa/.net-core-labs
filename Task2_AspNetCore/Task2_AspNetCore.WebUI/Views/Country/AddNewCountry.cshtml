@@ -1,0 +1,42 @@
+﻿@model Task2_AspNetCore.WebUI.Models.Data.Entities.Country
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <label><a href="~/Country/GetCountryList">Возврат в основное меню</a></label>
+    <h2>Добавить новую страну</h2>
+    @using (Html.BeginForm("AddNewCountry", "Country", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>Наименование страны:</td>
+                <td>@Html.TextBoxFor(country => country.Name, "")</td>
+            </tr>
+
+            <tr>
+                <td>Численность населения (чел.):</td>
+                <td>@Html.TextBoxFor(country => country.Population, "", new { type = "number" })</td>
+            </tr>
+
+            <tr>
+                <td>Площадь (км^2):</td>
+                <td>@Html.TextBoxFor(country => country.Size, "", new { type = "number" })</td>
+            </tr>
+            <tr>
+                <td>Участник G20:</td>
+                <td>@Html.CheckBoxFor(country => country.IsG20Member)</td>
+            </tr>
+            <tr>
+                <td>Континент:</td>
+                <td>@Html.DropDownListFor(country => country.Continent, Html.GetEnumSelectList(typeof(Task2_AspNetCore.WebUI.Models.Data.Enumeration.Continent)))</td>
+            </tr>
+        </table>
+        <div><input type="submit" class="btn btn-default" value="Отправить" /></div>
+    }
+</body>
+</html>
